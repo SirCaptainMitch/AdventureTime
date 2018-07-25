@@ -57,5 +57,62 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\IndepSrv_TheCaptain_1.sql" />
+    <Build Include="Security\captain_1.sql" />
+    <Build Include="Security\RoleMemberships_1.sql" />
+    <Build Include="Security\RoleMemberships_2.sql" />
+    <Build Include="Security\dbo_1..sql" />
+    <Build Include="dbo\Tables\AbilityScoreMods.sql" />
+    <Build Include="dbo\Tables\AbilityScores.sql" />
+    <Build Include="dbo\Tables\AdventuringGears.sql" />
+    <Build Include="dbo\Tables\Alignments.sql" />
+    <Build Include="dbo\Tables\ArmorCategorys.sql" />
+    <Build Include="dbo\Tables\Armors.sql" />
+    <Build Include="dbo\Tables\BackgroundProfs.sql" />
+    <Build Include="dbo\Tables\Backgrounds.sql" />
+    <Build Include="dbo\Tables\BackgroundTraits.sql" />
+    <Build Include="dbo\Tables\CharacterStatus.sql" />
+    <Build Include="dbo\Tables\ClassArchetypes.sql" />
+    <Build Include="dbo\Tables\Classes.sql" />
+    <Build Include="dbo\Tables\ClassLevels.sql" />
+    <Build Include="dbo\Tables\ClassProfs.sql" />
+    <Build Include="dbo\Tables\ClassSlots.sql" />
+    <Build Include="dbo\Tables\ClassSpells.sql" />
+    <Build Include="dbo\Tables\Conditions.sql" />
+    <Build Include="dbo\Tables\Containers.sql" />
+    <Build Include="dbo\Tables\DamageTypes.sql" />
+    <Build Include="dbo\Tables\DifficultyClasses.sql" />
+    <Build Include="dbo\Tables\ExchangeRates.sql" />
+    <Build Include="dbo\Tables\ExperiencePoints.sql" />
+    <Build Include="dbo\Tables\Feats.sql" />
+    <Build Include="dbo\Tables\Languages.sql" />
+    <Build Include="dbo\Tables\LifeStyles.sql" />
+    <Build Include="dbo\Tables\Lodgings.sql" />
+    <Build Include="dbo\Tables\MonsterActions.sql" />
+    <Build Include="dbo\Tables\MonsterLegendaryActions.sql" />
+    <Build Include="dbo\Tables\Monsters.sql" />
+    <Build Include="dbo\Tables\MonsterTraits.sql" />
+    <Build Include="dbo\Tables\Mounts.sql" />
+    <Build Include="dbo\Tables\RaceFeatures.sql" />
+    <Build Include="dbo\Tables\RaceProfs.sql" />
+    <Build Include="dbo\Tables\Races.sql" />
+    <Build Include="dbo\Tables\Sizes.sql" />
+    <Build Include="dbo\Tables\Skills.sql" />
+    <Build Include="dbo\Tables\Spells.sql" />
+    <Build Include="dbo\Tables\Tools.sql" />
+    <Build Include="dbo\Tables\Tradegoods.sql" />
+    <Build Include="dbo\Tables\Vehicles.sql" />
+    <Build Include="dbo\Tables\WeaponProfs.sql" />
+    <Build Include="dbo\Tables\Weapons.sql" />
+    <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
+    <Build Include="dbo\Stored Procedures\util_backupTable.sql" />
+    <Build Include="dbo\Functions\Split.sql" />
   </ItemGroup>
 </Project>
