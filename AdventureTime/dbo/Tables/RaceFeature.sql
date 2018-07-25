@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[RaceFeatures] (
+﻿CREATE TABLE [dbo].[RaceFeature] (
     [Id]     INT            IDENTITY (1, 1) NOT NULL,
     [RaceID] INT            NOT NULL,
     [Name]   NVARCHAR (250) NULL,

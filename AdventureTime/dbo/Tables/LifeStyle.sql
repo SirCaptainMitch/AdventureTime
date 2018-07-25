@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[LifeStyles] (
+﻿CREATE TABLE [dbo].[LifeStyle] (
     [LifestyleID] INT           IDENTITY (1, 1) NOT NULL,
     [Name]        VARCHAR (500) NOT NULL,
     [Cost]        VARCHAR (500) NULL,

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ClassProfs] (
+﻿CREATE TABLE [dbo].[ClassProf] (
     [ClassProfID] INT           IDENTITY (1, 1) NOT NULL,
     [ClassID]     INT           NOT NULL,
     [ProfType]    VARCHAR (500) NOT NULL,

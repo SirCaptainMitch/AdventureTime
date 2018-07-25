@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[WeaponProfs] (
+﻿CREATE TABLE [dbo].[WeaponProf] (
     [WeaponProfID]   INT          IDENTITY (1, 1) NOT NULL,
     [WeaponProfName] VARCHAR (50) NOT NULL,
     [WeaponType]     VARCHAR (50) NOT NULL,

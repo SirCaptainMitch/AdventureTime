@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Tradegoods] (
+﻿CREATE TABLE [dbo].[Tradegood] (
     [TradegoodsID] INT            IDENTITY (1, 1) NOT NULL,
     [Goods]        NVARCHAR (500) NOT NULL,
     [Cost]         NVARCHAR (500) NULL,

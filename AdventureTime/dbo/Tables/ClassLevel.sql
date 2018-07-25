@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ClassLevels] (
+﻿CREATE TABLE [dbo].[ClassLevel] (
     [ClassLevelID]    INT           IDENTITY (1, 1) NOT NULL,
     [ClassID]         INT           NOT NULL,
     [ClassLevel]      INT           NOT NULL,

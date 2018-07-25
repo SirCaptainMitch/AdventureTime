@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Lodgings] (
+﻿CREATE TABLE [dbo].[Lodging] (
     [LodgingID]   INT            IDENTITY (1, 1) NOT NULL,
     [Name]        NVARCHAR (500) NOT NULL,
     [Cost]        NVARCHAR (500) NOT NULL,

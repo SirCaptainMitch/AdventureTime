@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ClassArchetypes] (
+﻿CREATE TABLE [dbo].[ClassArchetype] (
     [ClassArchetypeID] INT           IDENTITY (1, 1) NOT NULL,
     [ClassID]          INT           NOT NULL,
     [Archetype]        VARCHAR (500) NOT NULL,

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Spells] (
+﻿CREATE TABLE [dbo].[Spell] (
     [SpellsID]   INT           IDENTITY (1, 1) NOT NULL,
     [SpellName]  VARCHAR (500) NOT NULL,
     [SpellLevel] INT           DEFAULT ((1)) NOT NULL,

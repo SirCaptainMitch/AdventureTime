@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[DifficultyClasses] (
+﻿CREATE TABLE [dbo].[DifficultyClasse] (
     [DCID]       INT           IDENTITY (1, 1) NOT NULL,
     [Difficulty] VARCHAR (500) NOT NULL,
     [DC]         INT           NOT NULL,

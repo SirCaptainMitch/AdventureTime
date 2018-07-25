@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AbilityScoreMods] (
+﻿CREATE TABLE [dbo].[AbilityScoreMod] (
     [AbilityScoreModID] INT IDENTITY (1, 1) NOT NULL,
     [ScoreMin]          INT NOT NULL,
     [ScoreMax]          INT NOT NULL,

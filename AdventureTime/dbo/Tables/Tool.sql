@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Tools] (
+﻿CREATE TABLE [dbo].[Tool] (
     [ToolsID]             INT           IDENTITY (1, 1) NOT NULL,
     [Name]                VARCHAR (500) NOT NULL,
     [Cost]                VARCHAR (500) NOT NULL,

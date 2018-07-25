@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[MonsterActions] (
+﻿CREATE TABLE [dbo].[MonsterAction] (
     [MonsterActionsID] INT           IDENTITY (1, 1) NOT NULL,
     [MonsterID]        INT           NOT NULL,
     [ActionName]       VARCHAR (500) NOT NULL,

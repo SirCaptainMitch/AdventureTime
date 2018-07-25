@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Skills] (
+﻿CREATE TABLE [dbo].[Skill] (
     [SkillID]        INT           IDENTITY (1, 1) NOT NULL,
     [Name]           VARCHAR (500) NOT NULL,
     [AbilityScoreID] INT           NOT NULL,

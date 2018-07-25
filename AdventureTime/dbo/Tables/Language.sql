@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Languages] (
+﻿CREATE TABLE [dbo].[Language] (
     [LanguagesID]     INT           IDENTITY (1, 1) NOT NULL,
     [Name]            VARCHAR (500) NOT NULL,
     [Script]          VARCHAR (500) NULL,

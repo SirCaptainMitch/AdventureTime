@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ExchangeRates] (
+﻿CREATE TABLE [dbo].[ExchangeRate] (
     [ExchangeRateID] INT           IDENTITY (1, 1) NOT NULL,
     [Coin]           VARCHAR (500) NOT NULL,
     [cp]             MONEY         NOT NULL,

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Mounts] (
+﻿CREATE TABLE [dbo].[Mount] (
     [MountsID]         INT           IDENTITY (1, 1) NOT NULL,
     [Name]             VARCHAR (500) NOT NULL,
     [Cost]             VARCHAR (500) NOT NULL,
