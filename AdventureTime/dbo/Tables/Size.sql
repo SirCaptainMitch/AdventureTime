@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Size] (
-    [SizeId]   INT           IDENTITY (1, 1) NOT NULL,
-    [Size]     VARCHAR (500) NOT NULL,
+    [SizeId]   TINYINT           IDENTITY (1, 1) NOT NULL,
+    [Size]     VARCHAR (10) NOT NULL,
+    [SizeDescription] VARCHAR(100) NOT NULL, 
     [Height]   MONEY         NOT NULL,
     [Width]    MONEY         NOT NULL,
     [Unit]     VARCHAR (50)  NOT NULL,

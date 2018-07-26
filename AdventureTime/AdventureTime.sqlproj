@@ -117,4 +117,7 @@
   <ItemGroup>
     <None Include="Snapshots\AdventureTime_20180725_18-46-07.dacpac" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="AdventureTime.refactorlog" />
+  </ItemGroup>
 </Project>
