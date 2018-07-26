@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [LpsDevApp]
-    WITH PASSWORD = N'ldtJxah+kmsgxmi|1b{q7szcmsFT7_&#$!~<kfulcfohhfVa', SID = 0xA326207F73A2FC46B20084C33100CA83, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
-

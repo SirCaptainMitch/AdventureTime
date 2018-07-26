@@ -57,5 +57,64 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Snapshots" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AbilityScoreMod.sql" />
+    <Build Include="dbo\Tables\AbilityScore.sql" />
+    <Build Include="dbo\Tables\AdventuringGear.sql" />
+    <Build Include="dbo\Tables\Alignment.sql" />
+    <Build Include="dbo\Tables\ArmorCategory.sql" />
+    <Build Include="dbo\Tables\Armor.sql" />
+    <Build Include="dbo\Tables\BackgroundProf.sql" />
+    <Build Include="dbo\Tables\Background.sql" />
+    <Build Include="dbo\Tables\BackgroundTrait.sql" />
+    <Build Include="dbo\Tables\CharacterStatus.sql" />
+    <Build Include="dbo\Tables\ClassArchetype.sql" />
+    <Build Include="dbo\Tables\Class.sql" />
+    <Build Include="dbo\Tables\ClassLevel.sql" />
+    <Build Include="dbo\Tables\ClassProf.sql" />
+    <Build Include="dbo\Tables\ClassSlot.sql" />
+    <Build Include="dbo\Tables\ClassSpell.sql" />
+    <Build Include="dbo\Tables\Condition.sql" />
+    <Build Include="dbo\Tables\Container.sql" />
+    <Build Include="dbo\Tables\DamageType.sql" />
+    <Build Include="dbo\Tables\DifficultyClass.sql" />
+    <Build Include="dbo\Tables\ExchangeRate.sql" />
+    <Build Include="dbo\Tables\ExperiencePoint.sql" />
+    <Build Include="dbo\Tables\Feat.sql" />
+    <Build Include="dbo\Tables\Language.sql" />
+    <Build Include="dbo\Tables\LifeStyle.sql" />
+    <Build Include="dbo\Tables\Lodging.sql" />
+    <Build Include="dbo\Tables\MonsterAction.sql" />
+    <Build Include="dbo\Tables\MonsterLegendaryAction.sql" />
+    <Build Include="dbo\Tables\Monster.sql" />
+    <Build Include="dbo\Tables\MonsterTrait.sql" />
+    <Build Include="dbo\Tables\Mount.sql" />
+    <Build Include="dbo\Tables\RaceFeature.sql" />
+    <Build Include="dbo\Tables\RaceProf.sql" />
+    <Build Include="dbo\Tables\Race.sql" />
+    <Build Include="dbo\Tables\Size.sql" />
+    <Build Include="dbo\Tables\Skill.sql" />
+    <Build Include="dbo\Tables\Spell.sql" />
+    <Build Include="dbo\Tables\Tool.sql" />
+    <Build Include="dbo\Tables\Tradegood.sql" />
+    <Build Include="dbo\Tables\Vehicle.sql" />
+    <Build Include="dbo\Tables\WeaponProf.sql" />
+    <Build Include="dbo\Tables\Weapon.sql" />
+    <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
+    <Build Include="dbo\Functions\Split.sql" />
+    <Build Include="Security\captain.sql" />
+    <Build Include="Security\dbo..sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="Security\captain_1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Snapshots\AdventureTime_20180725_18-46-07.dacpac" />
   </ItemGroup>
 </Project>
