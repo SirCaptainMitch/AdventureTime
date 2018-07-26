@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[ExperiencePoint] (
-    [ExperienceID]        INT IDENTITY (1, 1) NOT NULL,
+    [ExperienceId]        INT IDENTITY (1, 1) NOT NULL,
     [ExperiencePointsMin] INT NOT NULL,
     [ExperiencePointsMax] INT NOT NULL,
     [Level]               INT NOT NULL,

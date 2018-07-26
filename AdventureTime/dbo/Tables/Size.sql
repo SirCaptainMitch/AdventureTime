@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Size] (
-    [SizeID]   INT           IDENTITY (1, 1) NOT NULL,
+    [SizeId]   INT           IDENTITY (1, 1) NOT NULL,
     [Size]     VARCHAR (500) NOT NULL,
     [Height]   MONEY         NOT NULL,
     [Width]    MONEY         NOT NULL,

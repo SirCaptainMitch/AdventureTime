@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[ArmorCategorys] (
-    [ArmorCategoryID] INT           IDENTITY (1, 1) NOT NULL,
+﻿CREATE TABLE [dbo].[ArmorCategory] (
+    [ArmorCategoryId] INT           IDENTITY (1, 1) NOT NULL,
     [Name]            VARCHAR (500) NOT NULL,
     [DonTime]         MONEY         NOT NULL,
     [DoffTime]        MONEY         NOT NULL,

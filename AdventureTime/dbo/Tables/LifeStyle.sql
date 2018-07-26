@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[LifeStyle] (
-    [LifestyleID] INT           IDENTITY (1, 1) NOT NULL,
+    [LifestyleId] INT           IDENTITY (1, 1) NOT NULL,
     [Name]        VARCHAR (500) NOT NULL,
     [Cost]        VARCHAR (500) NULL,
     [CostUnit]    VARCHAR (2)   DEFAULT ('gp') NULL,

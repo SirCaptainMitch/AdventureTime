@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[DamageTypes] (
+﻿CREATE TABLE [dbo].[DamageType] (
     [DamageTypeId] INT           IDENTITY (1, 1) NOT NULL,
     [Name]         VARCHAR (500) NOT NULL,
     [ShortName]    VARCHAR (500) NOT NULL,

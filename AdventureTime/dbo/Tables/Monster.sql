@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Monster] (
-    [MonsterID]    INT           IDENTITY (1, 1) NOT NULL,
+    [MonsterId]    INT           IDENTITY (1, 1) NOT NULL,
     [Name]         VARCHAR (500) NOT NULL,
     [Size]         VARCHAR (500) NULL,
     [Monstertype]  VARCHAR (500) NULL,
@@ -27,6 +27,6 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_test]
-    ON [dbo].[Monsters]([Name] ASC, [Size] ASC, [Monstertype] ASC)
+    ON [dbo].[Monster]([Name] ASC, [Size] ASC, [Monstertype] ASC)
     INCLUDE([AC], [HP]);
 

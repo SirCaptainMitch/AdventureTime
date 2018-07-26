@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[AdventuringGears] (
-    [AdventuringGearID] INT           IDENTITY (1, 1) NOT NULL,
+﻿CREATE TABLE [dbo].[AdventuringGear] (
+    [AdventuringGearId] INT           IDENTITY (1, 1) NOT NULL,
     [Name]              VARCHAR (500) NOT NULL,
     [Cost]              VARCHAR (500) DEFAULT ((0)) NOT NULL,
     [CostUnit]          VARCHAR (2)   DEFAULT ('gp') NOT NULL,

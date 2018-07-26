@@ -9,7 +9,7 @@ AS
 IF @ID = 'W'
 	BEGIN 
 		SELECT * 
-		FROM Weapons w 
+		FROM Weapon w 
 			 INNER JOIN WeaponProf wf ON w.WeaponProfID = wf.WeaponProfID 
 		WHERE w.Name LIKE '%' + @Name + '%';
 	END 
@@ -23,8 +23,8 @@ IF @ID = 'A'
 IF @ID = 'S'
 	BEGIN 
 		SELECT * 
-		FROM Spells s 
-		WHERE s.Name  LIKE '%' + @Name + '%';
+		FROM Spell s 
+		WHERE s.[SpellName]  LIKE '%' + @Name + '%';
 	END 
 
 END 

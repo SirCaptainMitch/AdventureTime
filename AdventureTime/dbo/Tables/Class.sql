@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[Classes] (
-    [ClassID]             INT           IDENTITY (1, 1) NOT NULL,
+﻿CREATE TABLE [dbo].[Class] (
+    [ClassId]             INT           IDENTITY (1, 1) NOT NULL,
     [Name]                VARCHAR (500) NOT NULL,
     [HitDie]              INT           NOT NULL,
     [SpellAbilityScoreID] INT           NULL,
