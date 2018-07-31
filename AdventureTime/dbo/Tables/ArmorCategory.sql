@@ -4,7 +4,7 @@
     [DonTime]         MONEY         NOT NULL,
     [DoffTime]        MONEY         NOT NULL,
     [TimeUnit]        VARCHAR (100) DEFAULT ('Min') NULL,
-    CONSTRAINT [PK_ArmorCategoryID] PRIMARY KEY CLUSTERED ([ArmorCategoryID] ASC),
+    CONSTRAINT [PK_ArmorCategoryID] PRIMARY KEY CLUSTERED ([ArmorCategoryId] ASC),
     CONSTRAINT [UC_ArmorCategoryName] UNIQUE NONCLUSTERED ([Name] ASC)
 );
 
