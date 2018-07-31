@@ -4,17 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>AdventureTime</Name>
+    <Name>OldAdventureTime</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{5934ff8c-5110-48d4-bdf8-1c779665f1ee}</ProjectGuid>
+    <ProjectGuid>{661f84c4-0ee5-4174-bfee-7f645ae6400d}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>AdventureTime</RootNamespace>
-    <AssemblyName>AdventureTime</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <RootNamespace>OldAdventureTime</RootNamespace>
+    <AssemblyName>OldAdventureTime</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -62,66 +64,61 @@
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="Snapshots" />
-    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\AbilityScoreMod.sql" />
-    <Build Include="dbo\Tables\AbilityScore.sql" />
-    <Build Include="dbo\Tables\AdventuringGear.sql" />
-    <Build Include="dbo\Tables\Alignment.sql" />
-    <Build Include="dbo\Tables\ArmorCategory.sql" />
-    <Build Include="dbo\Tables\Armor.sql" />
-    <Build Include="dbo\Tables\BackgroundProf.sql" />
-    <Build Include="dbo\Tables\Background.sql" />
-    <Build Include="dbo\Tables\BackgroundTrait.sql" />
+    <Build Include="dbo\Tables\BackgroundTraits.sql" />
+    <Build Include="dbo\Tables\ArmorCategorys.sql" />
+    <Build Include="dbo\Tables\Containers.sql" />
+    <Build Include="dbo\Tables\Races.sql" />
+    <Build Include="dbo\Tables\DamageTypes.sql" />
+    <Build Include="dbo\Tables\Vehicles.sql" />
+    <Build Include="dbo\Tables\ExchangeRates.sql" />
+    <Build Include="dbo\Tables\RaceFeatures.sql" />
+    <Build Include="dbo\Tables\Sizes.sql" />
+    <Build Include="dbo\Tables\Armors.sql" />
+    <Build Include="dbo\Tables\Skills.sql" />
+    <Build Include="dbo\Tables\Languages.sql" />
+    <Build Include="dbo\Tables\RaceProfs.sql" />
+    <Build Include="dbo\Tables\ExperiencePoints.sql" />
+    <Build Include="dbo\Tables\LifeStyles.sql" />
+    <Build Include="dbo\Tables\DifficultyClasses.sql" />
+    <Build Include="dbo\Tables\AdventuringGears.sql" />
+    <Build Include="dbo\Tables\Alignments.sql" />
+    <Build Include="dbo\Tables\Classes.sql" />
+    <Build Include="dbo\Tables\AbilityScoreMods.sql" />
+    <Build Include="dbo\Tables\ClassProfs.sql" />
+    <Build Include="dbo\Tables\Weapons.sql" />
+    <Build Include="dbo\Tables\ClassArchetypes.sql" />
+    <Build Include="dbo\Tables\WeaponProfs.sql" />
+    <Build Include="dbo\Tables\Mounts.sql" />
+    <Build Include="dbo\Tables\ClassSpells.sql" />
+    <Build Include="dbo\Tables\Monsters.sql" />
+    <Build Include="dbo\Tables\Feats.sql" />
+    <Build Include="dbo\Tables\ClassLevels.sql" />
+    <Build Include="dbo\Tables\MonsterActions.sql" />
+    <Build Include="dbo\Tables\MonsterTraits.sql" />
+    <Build Include="dbo\Tables\MonsterLegendaryActions.sql" />
+    <Build Include="dbo\Tables\Tradegoods.sql" />
+    <Build Include="dbo\Tables\Tools.sql" />
+    <Build Include="dbo\Tables\Lodgings.sql" />
+    <Build Include="dbo\Tables\Spells.sql" />
+    <Build Include="dbo\Tables\ClassSlots.sql" />
+    <Build Include="dbo\Tables\Conditions.sql" />
+    <Build Include="dbo\Tables\Backgrounds.sql" />
     <Build Include="dbo\Tables\CharacterStatus.sql" />
-    <Build Include="dbo\Tables\ClassArchetype.sql" />
-    <Build Include="dbo\Tables\Class.sql" />
-    <Build Include="dbo\Tables\ClassLevel.sql" />
-    <Build Include="dbo\Tables\ClassProf.sql" />
-    <Build Include="dbo\Tables\ClassSlot.sql" />
-    <Build Include="dbo\Tables\ClassSpell.sql" />
-    <Build Include="dbo\Tables\Condition.sql" />
-    <Build Include="dbo\Tables\Container.sql" />
-    <Build Include="dbo\Tables\DamageType.sql" />
-    <Build Include="dbo\Tables\DifficultyClass.sql" />
-    <Build Include="dbo\Tables\ExchangeRate.sql" />
-    <Build Include="dbo\Tables\ExperiencePoint.sql" />
-    <Build Include="dbo\Tables\Feat.sql" />
-    <Build Include="dbo\Tables\Language.sql" />
-    <Build Include="dbo\Tables\LifeStyle.sql" />
-    <Build Include="dbo\Tables\Lodging.sql" />
-    <Build Include="dbo\Tables\MonsterAction.sql" />
-    <Build Include="dbo\Tables\MonsterLegendaryAction.sql" />
-    <Build Include="dbo\Tables\Monster.sql" />
-    <Build Include="dbo\Tables\MonsterTrait.sql" />
-    <Build Include="dbo\Tables\Mount.sql" />
-    <Build Include="dbo\Tables\RaceFeature.sql" />
-    <Build Include="dbo\Tables\RaceProf.sql" />
-    <Build Include="dbo\Tables\Race.sql" />
-    <Build Include="dbo\Tables\Size.sql" />
-    <Build Include="dbo\Tables\Skill.sql" />
-    <Build Include="dbo\Tables\Spell.sql" />
-    <Build Include="dbo\Tables\Tool.sql" />
-    <Build Include="dbo\Tables\Tradegood.sql" />
-    <Build Include="dbo\Tables\Vehicle.sql" />
-    <Build Include="dbo\Tables\WeaponProf.sql" />
-    <Build Include="dbo\Tables\Weapon.sql" />
-    <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
-    <Build Include="dbo\Functions\Split.sql" />
+    <Build Include="dbo\Tables\AbilityScores.sql" />
+    <Build Include="dbo\Tables\BackgroundProfs.sql" />
+    <Build Include="Security\bi.sql" />
     <Build Include="Security\captain.sql" />
-    <Build Include="Security\dbo..sql" />
+    <Build Include="Security\IndepSrv_TheCaptain.sql" />
+    <Build Include="Security\reporting.sql" />
+    <Build Include="Security\LpsDevApp.sql" />
+    <Build Include="Security\LpsDevApp_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="Security\captain_1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Snapshots\AdventureTime_20180725_18-46-07.dacpac" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="AdventureTime.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Scripts\Script.PostDeployment1.sql" />
+    <Build Include="dbo\Functions\Split.sql" />
+    <Build Include="dbo\Stored Procedures\util_backupTable.sql" />
+    <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
+    <Build Include="Security\bi_1.sql" />
+    <Build Include="Security\dbo..sql" />
   </ItemGroup>
 </Project>

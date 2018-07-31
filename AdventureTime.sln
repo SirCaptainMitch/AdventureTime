@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdventureTime", "AdventureTime\AdventureTime.sqlproj", "{5934FF8C-5110-48D4-BDF8-1C779665F1EE}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "OldAdventureTime", "OldAdventureTime\OldAdventureTime.sqlproj", "{661F84C4-0EE5-4174-BFEE-7F645AE6400D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{5934FF8C-5110-48D4-BDF8-1C779665F1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5934FF8C-5110-48D4-BDF8-1C779665F1EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5934FF8C-5110-48D4-BDF8-1C779665F1EE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661F84C4-0EE5-4174-BFEE-7F645AE6400D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
