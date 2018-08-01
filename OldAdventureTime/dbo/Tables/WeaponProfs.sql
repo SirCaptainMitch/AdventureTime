@@ -1,7 +1,7 @@
-﻿CREATE TABLE [dbo].[WeaponProfs] (
-    [WeaponProfID]   INT          IDENTITY (1, 1) NOT NULL,
-    [WeaponProfName] VARCHAR (50) NOT NULL,
+﻿CREATE TABLE [dbo].[WeaponCategorys] (
+    [WeaponCategoryID]   INT          IDENTITY (1, 1) NOT NULL,
+    [WeaponCategoryName] VARCHAR (50) NOT NULL,
     [WeaponType]     VARCHAR (50) NOT NULL,
-    CONSTRAINT [PK_WeaponProfID] PRIMARY KEY CLUSTERED ([WeaponProfID] ASC)
+    CONSTRAINT [PK_WeaponCategoryID] PRIMARY KEY CLUSTERED ([WeaponCategoryID] ASC)
 );
 

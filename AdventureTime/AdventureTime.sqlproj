@@ -106,7 +106,7 @@
     <Build Include="dbo\Tables\Tool.sql" />
     <Build Include="dbo\Tables\Tradegood.sql" />
     <Build Include="dbo\Tables\Vehicle.sql" />
-    <Build Include="dbo\Tables\WeaponProf.sql" />
+    <Build Include="dbo\Tables\WeaponCategory.sql" />
     <Build Include="dbo\Tables\Weapon.sql" />
     <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
     <Build Include="dbo\Functions\Split.sql" />

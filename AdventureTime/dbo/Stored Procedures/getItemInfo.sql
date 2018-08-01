@@ -10,15 +10,15 @@ IF @ID = 'W'
 	BEGIN 
 		SELECT * 
 		FROM Weapon w 
-			 INNER JOIN WeaponProf wf ON w.WeaponProfID = wf.WeaponProfID 
-		WHERE w.Name LIKE '%' + @Name + '%';
+			 INNER JOIN WeaponCategory wf ON w.WeaponCategoryId = wf.WeaponCategoryId
+		WHERE w.WeaponName LIKE '%' + @Name + '%';
 	END 
 IF @ID = 'A'
 	BEGIN 
 		SELECT * 
 		FROM Armor a 
-			 INNER JOIN ArmorCategory ac ON ac.ArmorCategoryID = a.ArmorCategoryID 
-		WHERE a.Name  LIKE '%' + @Name + '%';
+			 INNER JOIN ArmorCategory ac ON ac.ArmorCategoryId = a.ArmorCategoryId
+		WHERE a.ArmorName  LIKE '%' + @Name + '%';
 	END 
 IF @ID = 'S'
 	BEGIN 

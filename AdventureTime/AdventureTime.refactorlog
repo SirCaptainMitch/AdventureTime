@@ -21,4 +21,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="RaceName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="2806d179-4400-42eb-8857-31e254cd7a38" ChangeDateTime="07/31/2018 16:52:47">
+    <Property Name="ElementName" Value="[dbo].[RaceProf].[type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RaceProf]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a25d25e3-d4e0-4104-a42f-91e7ae9e6906" ChangeDateTime="08/01/2018 23:13:05">
+    <Property Name="ElementName" Value="[dbo].[ArmorCategory].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ArmorCategory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ArmorCategory" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="489a84b7-e3ae-46d2-8945-31ac5ce01344" ChangeDateTime="08/01/2018 23:19:18">
+    <Property Name="ElementName" Value="[dbo].[Armor].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Armor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ArmorName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="87afaa1b-9b71-4b74-9689-3a4968989454" ChangeDateTime="08/01/2018 23:26:53">
+    <Property Name="ElementName" Value="[dbo].[Armor].[ArmorCategoryID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Armor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ArmorCategoryId" />
+  </Operation>
 </Operations>

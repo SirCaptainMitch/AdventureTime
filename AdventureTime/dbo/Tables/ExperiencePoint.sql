@@ -4,7 +4,7 @@
     [ExperiencePointsMax] INT NOT NULL,
     [Level]               INT NOT NULL,
     [ProficiencyBonus]    INT NOT NULL,
-    CONSTRAINT [PK_XP] PRIMARY KEY CLUSTERED ([ExperienceID] ASC),
+    CONSTRAINT [PK_XP] PRIMARY KEY CLUSTERED ([ExperienceId] ASC),
     CONSTRAINT [UC_XP_Level] UNIQUE NONCLUSTERED ([Level] ASC),
     CONSTRAINT [UC_XP_XPMax] UNIQUE NONCLUSTERED ([ExperiencePointsMax] ASC),
     CONSTRAINT [UC_XP_XPMin] UNIQUE NONCLUSTERED ([ExperiencePointsMin] ASC)

@@ -6,7 +6,7 @@
     [Width]    MONEY         NOT NULL,
     [Unit]     VARCHAR (50)  NOT NULL,
     [IsMetric] BIT           DEFAULT ((0)) NULL,
-    CONSTRAINT [PK_SizeID] PRIMARY KEY CLUSTERED ([SizeID] ASC),
+    CONSTRAINT [PK_SizeId] PRIMARY KEY CLUSTERED ([SizeId] ASC),
     CONSTRAINT [UC_Size_Name] UNIQUE NONCLUSTERED ([Size] ASC)
 );
 

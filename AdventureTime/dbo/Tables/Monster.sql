@@ -21,7 +21,7 @@
     [Immune]       VARCHAR (500) NULL,
     [Senses]       VARCHAR (500) NULL,
     [Languages]    VARCHAR (500) NULL,
-    PRIMARY KEY CLUSTERED ([MonsterID] ASC),
+    PRIMARY KEY CLUSTERED ([MonsterId] ASC),
     UNIQUE NONCLUSTERED ([MonsterName] ASC)
 );
 

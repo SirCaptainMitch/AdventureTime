@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[Weapon] (
     [WeaponId]            INT           IDENTITY (1, 1) NOT NULL,
-    [Name]                VARCHAR (500) NULL,
-    [WeaponProfID]        INT           NULL,
+    [WeaponName]                VARCHAR (500) NULL,
+    [WeaponCategoryId]        INT           NULL,
     [DamageDice]          VARCHAR (500) NULL,
     [VersatileDamageDice] VARCHAR (500) NULL,
-    [BaseDamageTypeID]    INT           NULL,
+    [BaseDamageTypeId]    INT           NULL,
     [RangeMin]            INT           NULL,
     [RangeMax]            INT           NULL,
     [Cost]                DECIMAL (18)  NULL,
@@ -20,9 +20,9 @@
     [IsSpecial]           BIT           NULL,
     [Ammunition]          BIT           NULL,
     [WeaponText]          TEXT          NULL,
-    PRIMARY KEY CLUSTERED ([WeaponID] ASC),
-    CONSTRAINT [FK_Weapons_BaseDamageTypeID] FOREIGN KEY ([BaseDamageTypeID]) REFERENCES [dbo].[DamageType] ([DamageTypeId]),
-    CONSTRAINT [FK_Weapons_WeaponProfID] FOREIGN KEY ([WeaponProfID]) REFERENCES [dbo].[WeaponProf] ([WeaponProfID]),
-    UNIQUE NONCLUSTERED ([Name] ASC)
+    PRIMARY KEY CLUSTERED ([WeaponId] ASC),
+    CONSTRAINT [FK_Weapon_BaseDamageTypeId] FOREIGN KEY ([BaseDamageTypeId]) REFERENCES [dbo].[DamageType] ([DamageTypeId]),
+    CONSTRAINT [FK_Weapon_WeaponTypeId] FOREIGN KEY ([WeaponCategoryId]) REFERENCES [dbo].[WeaponCategory] ([WeaponCategoryId]),
+    UNIQUE NONCLUSTERED ([WeaponName] ASC)
 );
 

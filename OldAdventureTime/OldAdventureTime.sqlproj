@@ -116,7 +116,6 @@
     <Build Include="Security\LpsDevApp_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Functions\Split.sql" />
-    <Build Include="dbo\Stored Procedures\util_backupTable.sql" />
     <Build Include="dbo\Stored Procedures\getItemInfo.sql" />
     <Build Include="Security\bi_1.sql" />
     <Build Include="Security\dbo..sql" />

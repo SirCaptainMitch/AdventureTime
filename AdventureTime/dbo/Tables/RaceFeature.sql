@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[RaceFeature] (
     [RaceFeatureId]     INT            IDENTITY (1, 1) NOT NULL,
-    [RaceID] INT            NOT NULL,
-    [Name]   NVARCHAR (250) NULL,
+    [RaceId] INT            NOT NULL,
+    [RaceFeature]   NVARCHAR (250) NULL,
     [Text]   NVARCHAR (MAX) NULL,
     PRIMARY KEY CLUSTERED ([RaceFeatureId] ASC),
-    CONSTRAINT [FK_UC_RaceID] FOREIGN KEY ([RaceID]) REFERENCES [dbo].[Race] ([RaceID])
+    CONSTRAINT [FK_UC_RaceId] FOREIGN KEY ([RaceId]) REFERENCES [dbo].[Race] ([RaceId])
 );
 

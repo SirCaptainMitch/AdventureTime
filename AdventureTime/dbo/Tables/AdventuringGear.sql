@@ -16,6 +16,6 @@
     [Category]          VARCHAR (500) DEFAULT (NULL) NULL,
     [Roll]              VARCHAR (50)  DEFAULT (NULL) NULL,
     [GearText]          VARCHAR (MAX) NOT NULL,
-    PRIMARY KEY CLUSTERED ([AdventuringGearID] ASC)
+    PRIMARY KEY CLUSTERED ([AdventuringGearId] ASC)
 );
 

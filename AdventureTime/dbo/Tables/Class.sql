@@ -3,7 +3,7 @@
     [Name]                VARCHAR (500) NOT NULL,
     [HitDie]              INT           NOT NULL,
     [SpellAbilityScoreID] INT           NULL,
-    PRIMARY KEY CLUSTERED ([ClassID] ASC),
+    PRIMARY KEY CLUSTERED ([ClassId] ASC),
     UNIQUE NONCLUSTERED ([Name] ASC)
 );
 
