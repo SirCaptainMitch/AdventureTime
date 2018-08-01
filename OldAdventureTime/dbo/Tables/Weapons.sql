@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Weapons] (
     [WeaponID]            INT           IDENTITY (1, 1) NOT NULL,
     [Name]                VARCHAR (500) NULL,
-    [WeaponProfID]        INT           NULL,
+    [WeaponCategoryID]        INT           NULL,
     [DamageDice]          VARCHAR (500) NULL,
     [VersatileDamageDice] VARCHAR (500) NULL,
     [BaseDamageTypeID]    INT           NULL,
@@ -22,7 +22,7 @@
     [WeaponText]          TEXT          NULL,
     PRIMARY KEY CLUSTERED ([WeaponID] ASC),
     CONSTRAINT [FK_Weapons_BaseDamageTypeID] FOREIGN KEY ([BaseDamageTypeID]) REFERENCES [dbo].[DamageTypes] ([DamageTypeId]),
-    CONSTRAINT [FK_Weapons_WeaponProfID] FOREIGN KEY ([WeaponProfID]) REFERENCES [dbo].[WeaponProfs] ([WeaponProfID]),
+    CONSTRAINT [FK_Weapons_WeaponCategoryID] FOREIGN KEY ([WeaponCategoryID]) REFERENCES [dbo].[WeaponCategorys] ([WeaponCategoryID]),
     UNIQUE NONCLUSTERED ([Name] ASC)
 );
 

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ClassSlot] (
     [ClassSlotId]    INT           IDENTITY (1, 1) NOT NULL,
-    [ClassID]        INT           NOT NULL,
+    [ClassId]        INT           NOT NULL,
     [ClassLevel]     TINYINT       NULL,
     [Slots]          VARCHAR (500) NULL,
     [FirstLevel]     TINYINT       NULL,
@@ -15,18 +15,18 @@
     [CantripsKnown]  INT           DEFAULT ((0)) NOT NULL,
     [SpellsKnown]    INT           DEFAULT ((0)) NOT NULL,
     [SpellsPrepared] INT           DEFAULT ((0)) NOT NULL,
-    PRIMARY KEY CLUSTERED ([ClassSlotID] ASC),
-    CONSTRAINT [FK_ClassSlots_ClassID] FOREIGN KEY ([ClassID]) REFERENCES [dbo].[Class] ([ClassID])
+    PRIMARY KEY CLUSTERED ([ClassSlotId] ASC),
+    CONSTRAINT [FK_ClassSlots_ClassID] FOREIGN KEY ([ClassId]) REFERENCES [dbo].[Class] ([ClassId])
 );
 
 
 GO
 CREATE NONCLUSTERED INDEX [NC_IX_ClassSlots_classID]
-    ON [dbo].[ClassSlot]([ClassID] ASC, [ClassLevel] ASC, [Slots] ASC, [FirstLevel] ASC, [SecondLevel] ASC, [ThirdLevel] ASC, [FourthLevel] ASC, [FifthLevel] ASC, [SixthLevel] ASC, [SeventhLevel] ASC, [EigthLevel] ASC, [NinthLevel] ASC);
+    ON [dbo].[ClassSlot]([ClassId] ASC, [ClassLevel] ASC, [Slots] ASC, [FirstLevel] ASC, [SecondLevel] ASC, [ThirdLevel] ASC, [FourthLevel] ASC, [FifthLevel] ASC, [SixthLevel] ASC, [SeventhLevel] ASC, [EigthLevel] ASC, [NinthLevel] ASC);
 
 
 GO
 CREATE NONCLUSTERED INDEX [NC_IX_ClassSlots_Cantrips]
-    ON [dbo].[ClassSlot]([ClassID] ASC, [ClassLevel] ASC, [CantripsKnown] ASC, [SpellsKnown] ASC, [SpellsPrepared] ASC)
+    ON [dbo].[ClassSlot]([ClassId] ASC, [ClassLevel] ASC, [CantripsKnown] ASC, [SpellsKnown] ASC, [SpellsPrepared] ASC)
     INCLUDE([Slots]);
 

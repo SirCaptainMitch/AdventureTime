@@ -21,8 +21,8 @@
     [Ammunition]          BIT           NULL,
     [WeaponText]          TEXT          NULL,
     PRIMARY KEY CLUSTERED ([WeaponId] ASC),
-    CONSTRAINT [FK_Weapon_BaseDamageTypeID] FOREIGN KEY ([BaseDamageTypeID]) REFERENCES [dbo].[DamageType] ([DamageTypeId]),
-    CONSTRAINT [FK_Weapon_WeaponTypeID] FOREIGN KEY ([WeaponCategoryId]) REFERENCES [dbo].[WeaponCategory] ([WeaponCategoryId]),
+    CONSTRAINT [FK_Weapon_BaseDamageTypeId] FOREIGN KEY ([BaseDamageTypeId]) REFERENCES [dbo].[DamageType] ([DamageTypeId]),
+    CONSTRAINT [FK_Weapon_WeaponTypeId] FOREIGN KEY ([WeaponCategoryId]) REFERENCES [dbo].[WeaponCategory] ([WeaponCategoryId]),
     UNIQUE NONCLUSTERED ([WeaponName] ASC)
 );
 

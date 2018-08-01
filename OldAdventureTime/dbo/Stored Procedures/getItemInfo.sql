@@ -10,7 +10,7 @@
 --	BEGIN 
 --		SELECT * 
 --		FROM Weapons w 
---			 INNER JOIN WeaponProf wf ON w.WeaponProfID = wf.WeaponProfID 
+--			 INNER JOIN WeaponCategory wf ON w.WeaponCategoryID = wf.WeaponCategoryID 
 --		WHERE w.Name LIKE '%' + @Name + '%';
 --	END 
 --IF @ID = 'A'

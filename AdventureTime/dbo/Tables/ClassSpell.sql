@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[ClassSpell] (
     [ClassSpellId] INT           IDENTITY (1, 1) NOT NULL,
-    [ClassID]       INT           NOT NULL,
-    [ArchTypeID]    INT           NOT NULL,
+    [ClassId]       INT           NOT NULL,
+    [ArchTypeId]    INT           NOT NULL,
     [Components]    VARCHAR (500) NULL,
     [Duration]      VARCHAR (500) NULL,
     [ClassLevel]    INT           NOT NULL,
@@ -10,8 +10,8 @@
     [SpellSchool]   VARCHAR (500) NULL,
     [ActionTime]    VARCHAR (500) NULL,
     [SpellText]     TEXT          NULL,
-    PRIMARY KEY CLUSTERED ([ClassSpellID] ASC),
-    CONSTRAINT [FK_ClassSpells_ArchtypeID] FOREIGN KEY ([ArchTypeID]) REFERENCES [dbo].[ClassArchetype] ([ClassArchetypeID]),
-    CONSTRAINT [FK_ClassSpells_ClassID] FOREIGN KEY ([ClassID]) REFERENCES [dbo].[Class] ([ClassID])
+    PRIMARY KEY CLUSTERED ([ClassSpellId] ASC),
+    CONSTRAINT [FK_ClassSpells_ArchtypeId] FOREIGN KEY ([ArchTypeId]) REFERENCES [dbo].[ClassArchetype] ([ClassArchetypeId]),
+    CONSTRAINT [FK_ClassSpells_ClassId] FOREIGN KEY ([ClassId]) REFERENCES [dbo].[Class] ([ClassId])
 );
 

@@ -10,6 +10,6 @@
     [Duration]   VARCHAR (500) NULL,
     [Classes]    VARCHAR (500) NULL,
     [SpellText]  TEXT          NULL,
-    PRIMARY KEY CLUSTERED ([SpellID] ASC)
+    PRIMARY KEY CLUSTERED ([SpellId] ASC)
 );
 
