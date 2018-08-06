@@ -9,7 +9,7 @@
     [HP]           VARCHAR (500) NULL,
     [PassivePerception]      VARCHAR (500) NULL,
     [Speed]        VARCHAR (500) NULL,
-    [cr]           MONEY         NULL,
+    [CR]           DECIMAL(2, 2)         NULL,
     [Strength]     INT           NULL,
     [Dexterity]    INT           NULL,
     [Constitution] INT           NULL,
