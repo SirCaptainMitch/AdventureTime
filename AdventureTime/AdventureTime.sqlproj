@@ -114,6 +114,8 @@
     <Build Include="Security\dbo..sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Security\captain_1.sql" />
+    <Build Include="dbo\Tables\MovementType.sql" />
+    <Build Include="dbo\Tables\MonsterMovement.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Snapshots\AdventureTime_20180725_18-46-07.dacpac" />

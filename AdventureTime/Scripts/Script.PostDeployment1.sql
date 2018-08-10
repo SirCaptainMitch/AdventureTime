@@ -47,5 +47,18 @@ WHERE NOT EXISTS ( SELECT 1
                    WHERE a.SizeId = s.SizeID ) 
      
 SET IDENTITY_INSERT dbo.Size OFF; 
+GO 
 
+INSERT MovementType ( 
+  Movement 
+) 
+SELECT Movement 
+FROM ( VALUES ('Base') 
+              ,('Fly')
+              ,('Climb')
+              ,('Burrow') 
+              ,('Swim')
+              ,('Rolling') 
+     ) AS SpeedType (movement)
+GO 
 
